@@ -34,11 +34,11 @@ GitHub Pages kann keine Formulare verarbeiten. Variante ohne Drittanbieter: Das 
 (`mailto:`) mit Name, Wunschtermin und Leistung vor – keine Daten verlassen den Browser, DSGVO-unkritisch.
 Später möglich: Formspree/Web3Forms o. ä. (dann Datenschutzerklärung ergänzen, AV-Vertrag).
 
-## Hero-Varianten (Bildschirmfotos in `entwurf/bildschirmfotos/`)
+## Hero-Varianten (Entwürfe in der Git-Historie)
 - **A – Das Plakat:** Foto randlos in voller Höhe, schräge Jalousie-Schatten wandern darüber; Claim riesig
   unten links, Abspann-Zeile „In den Hauptrollen …“.
 - **B – Der Vorspann:** schwarze Bühne, Foto als Hochformat in offenen Lamellen rechts; „Your hair,“ in Bodoni
   riesig darüber, „OUR MASTERPIECE“ in Jost mit Differenz-Mischung; Billing-Block wie auf einem Filmplakat.
 
-Hinweis: Die aktuellen Fotos sind Instagram-Ausschnitte (≈ 280 px breit). Für das randlose Hero (A) braucht es
+**Gewählt: B.** Hinweis: Die aktuellen Fotos sind Instagram-Ausschnitte (≈ 280 px breit). Für das randlose Hero (A) braucht es
 später ein echtes Foto in hoher Auflösung; B verträgt kleinere Bilder besser.

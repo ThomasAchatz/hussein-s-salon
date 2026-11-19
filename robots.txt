@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thomasachatz.github.io/hussein-s-salon/sitemap.xml

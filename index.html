@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Friseur Straubing – Damen &amp; Herren | Hussein’s Salon</title>
+<meta name="description" content="Hussein’s Salon in Straubing: Damen- und Herrenfriseur in der Fraunhoferstraße 17. Schnitte, Fades, Bart und Farbe – Your hair, our masterpiece. Termin unter 09421 / 9619109.">
+<link rel="canonical" href="https://thomasachatz.github.io/hussein-s-salon/">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Hussein’s Salon">
+<meta property="og:title" content="Hussein’s Salon – Friseur in Straubing">
+<meta property="og:description" content="Your hair, our masterpiece. Damen &amp; Herren, Fraunhoferstraße 17, Straubing.">
+<meta property="og:url" content="https://thomasachatz.github.io/hussein-s-salon/">
+<meta property="og:image" content="https://thomasachatz.github.io/hussein-s-salon/bilder/og-bild.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="schriften/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="schriften/bodoni-moda-italic-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/basis.css">
+<link rel="stylesheet" href="css/seite.css">
+<script>
+  /* Vor dem ersten Zeichnen: JS-Klasse setzen und entscheiden, ob der Vorspann läuft */
+  (function (d) {
+    var h = d.documentElement, ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches, gesehen = false;
+    h.classList.add("js");
+    try { gesehen = sessionStorage.getItem("hs-vorspann") === "1"; } catch (e) {}
+    if (!ruhig && !gesehen) h.classList.add("mit-vorspann");
+  })(document);
+</script>
+<script defer src="vendor/gsap.min.js"></script>
+<script defer src="vendor/ScrollTrigger.min.js"></script>
+<script defer src="vendor/lenis.min.js"></script>
+<script type="module" src="js/haupt.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Hussein's Salon",
+  "slogan": "Your hair, our masterpiece",
+  "url": "https://thomasachatz.github.io/hussein-s-salon/",
+  "image": "https://thomasachatz.github.io/hussein-s-salon/bilder/og-bild.jpg",
+  "logo": "https://thomasachatz.github.io/hussein-s-salon/apple-touch-icon.png",
+  "telephone": "+49 9421 9619109",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Fraunhoferstraße 17",
+    "postalCode": "94315",
+    "addressLocality": "Straubing",
+    "addressRegion": "Bayern",
+    "addressCountry": "DE"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/husseins_salon/"]
+}
+</script>
+</head>
+<body>
+<a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+<div class="korn" aria-hidden="true"></div>
+
+<!-- Vorspann (nur beim ersten Besuch, max. 1,5 s, Klick oder Taste überspringt) -->
+<div class="vorspann" aria-hidden="true">
+  <div class="vorspann__logo logo logo--gross">
+    <span class="logo__claim">Your hair, our masterpiece</span>
+    <span class="logo__name">Hussein’s Salon</span>
+    <span class="logo__ort">Straubing</span>
+  </div>
+  <div class="vorspann__lamellen"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <span class="vorspann__tipp">Klicken zum Überspringen</span>
+</div>
+
+<header class="kopf">
+  <a class="logo" href="#start" aria-label="Hussein’s Salon – nach oben">
+    <span class="logo__claim">Your hair, our masterpiece</span>
+    <span class="logo__name">Hussein’s Salon</span>
+    <span class="logo__ort">Straubing</span>
+  </a>
+  <nav class="kopf__nav" aria-label="Hauptnavigation">
+    <a href="#manifest">Manifest</a><a href="#leistungen">Leistungen</a><a href="#galerie">Galerie</a><a href="#team">Team</a><a href="#besuch">Besuch</a>
+  </nav>
+  <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="menue">
+    <span class="menue-knopf__text">Menü</span><i aria-hidden="true"></i>
+  </button>
+</header>
+
+<div class="menue" id="menue" hidden>
+  <nav aria-label="Menü">
+    <ol>
+      <li><a href="#manifest"><span>01</span>Manifest</a></li>
+      <li><a href="#leistungen"><span>02</span>Leistungen</a></li>
+      <li><a href="#galerie"><span>03</span><em class="serif">Galerie</em></a></li>
+      <li><a href="#team"><span>04</span>Team</a></li>
+      <li><a href="#besuch"><span>05</span>Besuch</a></li>
+    </ol>
+  </nav>
+  <p class="menue__fuss"><a href="tel:+4994219619109">09421 / 9619109</a><br>Fraunhoferstraße 17 · Straubing</p>
+</div>
+
+<main id="inhalt">
+
+<!-- 1 · HERO ----------------------------------------------------------- -->
+<section class="hero" id="start" aria-labelledby="hero-titel">
+  <div class="hero__streifen" aria-hidden="true"></div>
+  <div class="buehne">
+    <span class="rahmen-nr" aria-hidden="true">Szene 01 — Fraunhoferstraße</span>
+    <div class="lamellen" data-lamellen-hero>
+      <div class="lamellen__bild">
+        <picture data-bild="inhaber-duo" data-alt="Die beiden Inhaber von Hussein’s Salon im Salon, rechts Hussein, mit einem Salon-Shirt in den Händen" data-sizes="(min-width: 900px) 470px, 82vw" data-laden="sofort" data-img-klasse="sw"><source type="image/avif" srcset="bilder/inhaber-duo-278.avif 278w" sizes="(min-width: 900px) 470px, 82vw"><source type="image/webp" srcset="bilder/inhaber-duo-278.webp 278w" sizes="(min-width: 900px) 470px, 82vw"><img src="bilder/inhaber-duo-278.webp" width="278" height="332" alt="Die beiden Inhaber von Hussein’s Salon im Salon, rechts Hussein, mit einem Salon-Shirt in den Händen" fetchpriority="high" decoding="async" class="sw"></picture>
+      </div>
+    </div>
+    <div class="titel">
+      <p class="titel__vor">Hussein’s Salon <span>präsentiert</span></p>
+      <h1 id="hero-titel">
+        <span class="serif titel__a" data-teilen="zeichen">Your hair,</span>
+        <span class="titel__b" data-teilen="zeichen">our Masterpiece</span>
+      </h1>
+    </div>
+  </div>
+  <div class="hero__unten">
+    <p class="billing">Ein Salon von <b>[Name]</b> und <b>Hussein</b> · Damen · Herren · Bart · Farbe · Gedreht in Straubing, Fraunhoferstraße 17 · Ab sofort auf Ihrem Kopf</p>
+    <a class="knopf magnet" href="tel:+4994219619109"><span class="knopf__punkt" aria-hidden="true"></span>Termin buchen</a>
+  </div>
+  <a class="hero__weiter" href="#manifest" aria-label="Weiter zum Manifest"><span aria-hidden="true">Scrollen</span><i aria-hidden="true"></i></a>
+</section>
+
+<!-- 2 · MANIFEST ------------------------------------------------------- -->
+<section class="manifest" id="manifest" aria-labelledby="manifest-titel">
+  <div class="manifest__innen">
+    <h2 class="abschnitt-marke" id="manifest-titel"><span>01</span> Manifest</h2>
+    <p class="manifest__text" data-teilen="woerter">
+      Haare sind unser <em class="serif messing">Material.</em>
+      Die Schere ist unser Pinsel, der Spiegel unsere Leinwand.
+      Sie kommen als Kunde – und gehen als <em class="serif">Meisterwerk.</em>
+    </p>
+    <p class="manifest__unterschrift">— [Name] &amp; Hussein, Inhaber</p>
+  </div>
+</section>
+
+<div class="vorhang" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- 3 · LEISTUNGEN ----------------------------------------------------- -->
+<section class="leistungen" id="leistungen" aria-labelledby="leistungen-titel">
+  <header class="abschnitt-kopf">
+    <h2 class="abschnitt-marke"><span>02</span> Leistungen</h2>
+    <p class="riesig" id="leistungen-titel"><span data-teilen="zeichen">Das</span> <em class="serif" data-teilen="zeichen">Programm</em></p>
+    <p class="hinweis">Preise sind vorläufige Platzhalter. Genauer Preis je nach Länge und Aufwand – fragen Sie uns.</p>
+  </header>
+
+  <div class="programm">
+    <section class="kategorie" aria-labelledby="kat-damen">
+      <h3 id="kat-damen"><span class="kategorie__nr">I</span> <em class="serif">Damen</em></h3>
+      <ul>
+        <li data-bild="damen-bob-blond"><span class="l-name">Waschen, Schneiden, Föhnen</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="damen-lang-glatt"><span class="l-name">Spitzen schneiden</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="damen-schwarz-wellen"><span class="l-name">Föhnen &amp; Styling</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="damen-bob-straehnen"><span class="l-name">Hochsteckfrisur / Anlass</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+      </ul>
+    </section>
+    <section class="kategorie" aria-labelledby="kat-herren">
+      <h3 id="kat-herren"><span class="kategorie__nr">II</span> <em class="serif">Herren</em></h3>
+      <ul>
+        <li data-bild="herren-fade-profil"><span class="l-name">Haarschnitt</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-crop-fade"><span class="l-name">Skin Fade</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-locken-taper"><span class="l-name">Langhaar &amp; Textur</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-curtain-fade"><span class="l-name">Kinder bis 12 Jahre</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+      </ul>
+    </section>
+    <section class="kategorie" aria-labelledby="kat-bart">
+      <h3 id="kat-bart"><span class="kategorie__nr">III</span> <em class="serif">Bart</em> &amp; Styling</h3>
+      <ul>
+        <li data-bild="bart-fade"><span class="l-name">Bart trimmen &amp; Kontur</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="bart-spiegel"><span class="l-name">Nassrasur mit heißem Tuch</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-textur-fade"><span class="l-name">Haarschnitt + Bart</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-fade-nacken"><span class="l-name">Augenbrauen &amp; Konturen</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+      </ul>
+    </section>
+    <section class="kategorie" aria-labelledby="kat-farbe">
+      <h3 id="kat-farbe"><span class="kategorie__nr">IV</span> <em class="serif">Farbe</em></h3>
+      <ul>
+        <li data-bild="farbe-balayage-locken"><span class="l-name">Balayage</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="farbe-blond-wellen"><span class="l-name">Strähnen / Foliensträhnen</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-locken-blond-fade"><span class="l-name">Blondierung</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+        <li data-bild="herren-buzzcut-blond"><span class="l-name">Ansatzfarbe / Tönung</span><span class="l-linie" aria-hidden="true"></span><span class="l-preis">ab [00] €</span></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Bild, das beim Hover/Tippen mitläuft (rein dekorativ) -->
+  <div class="schwebebild" aria-hidden="true">
+    <picture data-bild="damen-bob-blond" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-bob-blond-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/damen-bob-blond-278.webp 278w" sizes="260px"><img src="bilder/damen-bob-blond-278.webp" width="278" height="330" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="damen-lang-glatt" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-lang-glatt-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/damen-lang-glatt-278.webp 278w" sizes="260px"><img src="bilder/damen-lang-glatt-278.webp" width="278" height="331" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="damen-schwarz-wellen" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-schwarz-wellen-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/damen-schwarz-wellen-278.webp 278w" sizes="260px"><img src="bilder/damen-schwarz-wellen-278.webp" width="278" height="331" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="damen-bob-straehnen" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-bob-straehnen-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/damen-bob-straehnen-277.webp 277w" sizes="260px"><img src="bilder/damen-bob-straehnen-277.webp" width="277" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-fade-profil" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-fade-profil-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/herren-fade-profil-277.webp 277w" sizes="260px"><img src="bilder/herren-fade-profil-277.webp" width="277" height="330" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-crop-fade" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-crop-fade-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/herren-crop-fade-278.webp 278w" sizes="260px"><img src="bilder/herren-crop-fade-278.webp" width="278" height="331" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-locken-taper" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-locken-taper-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/herren-locken-taper-277.webp 277w" sizes="260px"><img src="bilder/herren-locken-taper-277.webp" width="277" height="330" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-curtain-fade" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-curtain-fade-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/herren-curtain-fade-278.webp 278w" sizes="260px"><img src="bilder/herren-curtain-fade-278.webp" width="278" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="bart-fade" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/bart-fade-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/bart-fade-277.webp 277w" sizes="260px"><img src="bilder/bart-fade-277.webp" width="277" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="bart-spiegel" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/bart-spiegel-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/bart-spiegel-278.webp 278w" sizes="260px"><img src="bilder/bart-spiegel-278.webp" width="278" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-textur-fade" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-textur-fade-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/herren-textur-fade-277.webp 277w" sizes="260px"><img src="bilder/herren-textur-fade-277.webp" width="277" height="331" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-fade-nacken" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-fade-nacken-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/herren-fade-nacken-278.webp 278w" sizes="260px"><img src="bilder/herren-fade-nacken-278.webp" width="278" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="farbe-balayage-locken" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/farbe-balayage-locken-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/farbe-balayage-locken-278.webp 278w" sizes="260px"><img src="bilder/farbe-balayage-locken-278.webp" width="278" height="332" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="farbe-blond-wellen" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/farbe-blond-wellen-277.avif 277w" sizes="260px"><source type="image/webp" srcset="bilder/farbe-blond-wellen-277.webp 277w" sizes="260px"><img src="bilder/farbe-blond-wellen-277.webp" width="277" height="331" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-locken-blond-fade" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-locken-blond-fade-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/herren-locken-blond-fade-278.webp 278w" sizes="260px"><img src="bilder/herren-locken-blond-fade-278.webp" width="278" height="330" alt="" loading="lazy" decoding="async" class="sw"></picture>
+    <picture data-bild="herren-buzzcut-blond" data-alt="" data-sizes="260px" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-buzzcut-blond-278.avif 278w" sizes="260px"><source type="image/webp" srcset="bilder/herren-buzzcut-blond-278.webp 278w" sizes="260px"><img src="bilder/herren-buzzcut-blond-278.webp" width="278" height="330" alt="" loading="lazy" decoding="async" class="sw"></picture>
+  </div>
+</section>
+
+<!-- 4 · GALERIE -------------------------------------------------------- -->
+<section class="galerie" id="galerie" aria-labelledby="galerie-titel">
+  <div class="galerie__pin">
+    <header class="galerie__kopf">
+      <h2 class="abschnitt-marke"><span>03</span> Galerie</h2>
+      <p class="riesig" id="galerie-titel"><em class="serif">Beweis</em>stücke</p>
+      <p class="galerie__tipp" aria-hidden="true"><span class="nur-touch">Wischen</span><span class="nur-maus">Weiter scrollen</span> →</p>
+    </header>
+    <ul class="strecke" aria-label="Arbeiten aus dem Salon – zum Vergrößern antippen">
+      <li class="f-hoch"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="herren-locken-blond-fade" data-alt="Blonde Locken mit hohem Fade" data-sizes="(min-width: 900px) 30vw, 70vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-locken-blond-fade-278.avif 278w" sizes="(min-width: 900px) 30vw, 70vw"><source type="image/webp" srcset="bilder/herren-locken-blond-fade-278.webp 278w" sizes="(min-width: 900px) 30vw, 70vw"><img src="bilder/herren-locken-blond-fade-278.webp" width="278" height="330" alt="Blonde Locken mit hohem Fade" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 01</span></li>
+      <li class="f-quadrat"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="damen-bob-blond" data-alt="Blonder Bob von hinten" data-sizes="(min-width: 900px) 26vw, 64vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-bob-blond-278.avif 278w" sizes="(min-width: 900px) 26vw, 64vw"><source type="image/webp" srcset="bilder/damen-bob-blond-278.webp 278w" sizes="(min-width: 900px) 26vw, 64vw"><img src="bilder/damen-bob-blond-278.webp" width="278" height="330" alt="Blonder Bob von hinten" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 02</span></li>
+      <li class="f-schmal"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="herren-fade-profil" data-alt="Herrenschnitt mit Taper Fade im Profil" data-sizes="(min-width: 900px) 22vw, 56vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-fade-profil-277.avif 277w" sizes="(min-width: 900px) 22vw, 56vw"><source type="image/webp" srcset="bilder/herren-fade-profil-277.webp 277w" sizes="(min-width: 900px) 22vw, 56vw"><img src="bilder/herren-fade-profil-277.webp" width="277" height="330" alt="Herrenschnitt mit Taper Fade im Profil" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 03</span></li>
+      <li class="f-hoch"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="farbe-balayage-locken" data-alt="Lange Locken mit Balayage" data-sizes="(min-width: 900px) 30vw, 70vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/farbe-balayage-locken-278.avif 278w" sizes="(min-width: 900px) 30vw, 70vw"><source type="image/webp" srcset="bilder/farbe-balayage-locken-278.webp 278w" sizes="(min-width: 900px) 30vw, 70vw"><img src="bilder/farbe-balayage-locken-278.webp" width="278" height="332" alt="Lange Locken mit Balayage" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 04</span></li>
+      <li class="f-quer"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="salon-backstage" data-alt="Blick hinter die Kulissen im Salon" data-sizes="(min-width: 900px) 40vw, 84vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/salon-backstage-278.avif 278w" sizes="(min-width: 900px) 40vw, 84vw"><source type="image/webp" srcset="bilder/salon-backstage-278.webp 278w" sizes="(min-width: 900px) 40vw, 84vw"><img src="bilder/salon-backstage-278.webp" width="278" height="332" alt="Blick hinter die Kulissen im Salon" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 05</span></li>
+      <li class="f-schmal"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="herren-textur-fade" data-alt="Strukturierter Schnitt mit Fade" data-sizes="(min-width: 900px) 22vw, 56vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-textur-fade-277.avif 277w" sizes="(min-width: 900px) 22vw, 56vw"><source type="image/webp" srcset="bilder/herren-textur-fade-277.webp 277w" sizes="(min-width: 900px) 22vw, 56vw"><img src="bilder/herren-textur-fade-277.webp" width="277" height="331" alt="Strukturierter Schnitt mit Fade" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 06</span></li>
+      <li class="f-hoch"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="damen-schwarz-wellen" data-alt="Schwarzes Haar mit Wellen" data-sizes="(min-width: 900px) 30vw, 70vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-schwarz-wellen-278.avif 278w" sizes="(min-width: 900px) 30vw, 70vw"><source type="image/webp" srcset="bilder/damen-schwarz-wellen-278.webp 278w" sizes="(min-width: 900px) 30vw, 70vw"><img src="bilder/damen-schwarz-wellen-278.webp" width="278" height="331" alt="Schwarzes Haar mit Wellen" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 07</span></li>
+      <li class="f-quadrat"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="herren-curtain-fade" data-alt="Herrenschnitt mit Pony und Fade von hinten" data-sizes="(min-width: 900px) 26vw, 64vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-curtain-fade-278.avif 278w" sizes="(min-width: 900px) 26vw, 64vw"><source type="image/webp" srcset="bilder/herren-curtain-fade-278.webp 278w" sizes="(min-width: 900px) 26vw, 64vw"><img src="bilder/herren-curtain-fade-278.webp" width="278" height="332" alt="Herrenschnitt mit Pony und Fade von hinten" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 08</span></li>
+      <li class="f-hoch"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="farbe-blond-wellen" data-alt="Hellblonde Wellen" data-sizes="(min-width: 900px) 30vw, 70vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/farbe-blond-wellen-277.avif 277w" sizes="(min-width: 900px) 30vw, 70vw"><source type="image/webp" srcset="bilder/farbe-blond-wellen-277.webp 277w" sizes="(min-width: 900px) 30vw, 70vw"><img src="bilder/farbe-blond-wellen-277.webp" width="277" height="331" alt="Hellblonde Wellen" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 09</span></li>
+      <li class="f-schmal"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="bart-fade" data-alt="Fade mit gepflegtem Vollbart" data-sizes="(min-width: 900px) 22vw, 56vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/bart-fade-277.avif 277w" sizes="(min-width: 900px) 22vw, 56vw"><source type="image/webp" srcset="bilder/bart-fade-277.webp 277w" sizes="(min-width: 900px) 22vw, 56vw"><img src="bilder/bart-fade-277.webp" width="277" height="332" alt="Fade mit gepflegtem Vollbart" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 10</span></li>
+      <li class="f-quadrat"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="damen-lang-glatt" data-alt="Langes, glattes Haar" data-sizes="(min-width: 900px) 26vw, 64vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/damen-lang-glatt-278.avif 278w" sizes="(min-width: 900px) 26vw, 64vw"><source type="image/webp" srcset="bilder/damen-lang-glatt-278.webp 278w" sizes="(min-width: 900px) 26vw, 64vw"><img src="bilder/damen-lang-glatt-278.webp" width="278" height="331" alt="Langes, glattes Haar" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 11</span></li>
+      <li class="f-hoch"><button type="button" class="strecke__bild" data-cursor="Ansehen"><picture data-bild="herren-locken-taper" data-alt="Lockiger Schnitt mit Taper" data-sizes="(min-width: 900px) 30vw, 70vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/herren-locken-taper-277.avif 277w" sizes="(min-width: 900px) 30vw, 70vw"><source type="image/webp" srcset="bilder/herren-locken-taper-277.webp 277w" sizes="(min-width: 900px) 30vw, 70vw"><img src="bilder/herren-locken-taper-277.webp" width="277" height="330" alt="Lockiger Schnitt mit Taper" loading="lazy" decoding="async" class="sw"></picture></button><span class="strecke__nr">No. 12</span></li>
+      <li class="strecke__ende"><a class="strecke__insta" href="https://www.instagram.com/husseins_salon/" target="_blank" rel="noopener">Mehr auf <em class="serif">Instagram</em><span>@husseins_salon ↗</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5 · TEAM ----------------------------------------------------------- -->
+<section class="team" id="team" aria-labelledby="team-titel">
+  <header class="abschnitt-kopf">
+    <h2 class="abschnitt-marke"><span>04</span> Team</h2>
+    <p class="riesig" id="team-titel"><span>Die</span> <em class="serif">Besetzung</em></p>
+  </header>
+  <ul class="besetzung">
+    <li class="person">
+      <div class="person__bild platzhalter" role="img" aria-label="Platzhalter: Porträt folgt"><span>Porträt<br>[Name]</span></div>
+      <p class="person__rolle">Inhaber · Herren &amp; Damen</p>
+      <p class="person__name">[Vorname <em class="serif">Nachname</em>]</p>
+    </li>
+    <li class="person">
+      <div class="person__bild platzhalter" role="img" aria-label="Platzhalter: Porträt von Hussein folgt"><span>Porträt<br>Hussein</span></div>
+      <p class="person__rolle">Inhaber · Herren &amp; Damen</p>
+      <p class="person__name"><em class="serif">Hussein</em> [Nachname]</p>
+    </li>
+    <li class="person">
+      <div class="person__bild"><picture data-bild="bart-spiegel" data-alt="Barber zeigt einem Kunden den fertigen Schnitt im Handspiegel" data-sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/bart-spiegel-278.avif 278w" sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw"><source type="image/webp" srcset="bilder/bart-spiegel-278.webp 278w" sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw"><img src="bilder/bart-spiegel-278.webp" width="278" height="332" alt="Barber zeigt einem Kunden den fertigen Schnitt im Handspiegel" loading="lazy" decoding="async" class="sw"></picture></div>
+      <p class="person__rolle">[Rolle]</p>
+      <p class="person__name">[Vorname <em class="serif">Nachname</em>]</p>
+    </li>
+    <li class="person">
+      <div class="person__bild"><picture data-bild="team-empfang" data-alt="Mitarbeiterin am Empfang des Salons mit einem Pflegeprodukt" data-sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw" data-img-klasse="sw"><source type="image/avif" srcset="bilder/team-empfang-277.avif 277w" sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw"><source type="image/webp" srcset="bilder/team-empfang-277.webp 277w" sizes="(min-width: 900px) 24vw, (min-width: 600px) 45vw, 88vw"><img src="bilder/team-empfang-277.webp" width="277" height="332" alt="Mitarbeiterin am Empfang des Salons mit einem Pflegeprodukt" loading="lazy" decoding="async" class="sw"></picture></div>
+      <p class="person__rolle">[Rolle]</p>
+      <p class="person__name">[Vorname <em class="serif">Nachname</em>]</p>
+    </li>
+  </ul>
+</section>
+
+<!-- 6 · LAUFBAND ------------------------------------------------------- -->
+<div class="laufband" aria-hidden="true">
+  <div class="laufband__spur">
+    <span>Damen · Herren · Straubing · Your hair, <b>our masterpiece</b> · </span><span>Damen · Herren · Straubing · Your hair, <b>our masterpiece</b> · </span>
+  </div>
+</div>
+
+<!-- 7 · BESUCH --------------------------------------------------------- -->
+<section class="besuch" id="besuch" aria-labelledby="besuch-titel">
+  <header class="abschnitt-kopf">
+    <h2 class="abschnitt-marke"><span>05</span> Besuch</h2>
+    <p class="riesig" id="besuch-titel"><span>Der</span> <em class="serif">Tatort</em></p>
+  </header>
+
+  <div class="besuch__raster">
+    <div class="besuch__daten">
+      <address>
+        <p class="besuch__label">Adresse</p>
+        <p class="besuch__gross">Fraunhoferstraße 17<br>94315 Straubing</p>
+        <p class="besuch__label">Telefon</p>
+        <p class="besuch__gross"><a class="unterstrich" href="tel:+4994219619109">09421 / 9619109</a></p>
+        <p class="besuch__label">Instagram</p>
+        <p><a class="unterstrich" href="https://www.instagram.com/husseins_salon/" target="_blank" rel="noopener">@husseins_salon ↗</a></p>
+      </address>
+      <div>
+        <p class="besuch__label">Öffnungszeiten <span class="platzhalter-marke">Platzhalter</span></p>
+        <dl class="zeiten">
+          <div><dt>Montag</dt><dd>geschlossen</dd></div>
+          <div><dt>Dienstag – Freitag</dt><dd>09:00 – 18:30</dd></div>
+          <div><dt>Samstag</dt><dd>09:00 – 15:00</dd></div>
+          <div><dt>Sonntag</dt><dd>geschlossen</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="karte" data-karte>
+      <div class="karte__vorschau">
+        <div class="karte__streifen" aria-hidden="true"></div>
+        <p class="karte__titel"><em class="serif">Fraunhoferstraße</em> 17</p>
+        <p class="karte__text">Zum Schutz Ihrer Daten laden wir die Karte erst nach Ihrem Klick. Dabei werden Daten (u. a. Ihre IP-Adresse) an Google übertragen. Mehr in der <a href="datenschutz.html#karte">Datenschutzerklärung</a>.</p>
+        <button class="knopf magnet" type="button" data-karte-laden><span class="knopf__punkt" aria-hidden="true"></span>Karte laden</button>
+        <a class="karte__extern unterstrich" href="https://www.google.com/maps/search/?api=1&amp;query=Fraunhoferstra%C3%9Fe+17%2C+94315+Straubing" target="_blank" rel="noopener">In Google Maps öffnen ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="anfrage">
+    <div class="anfrage__text">
+      <h3 class="riesig riesig--mittel"><span>Termin</span> <em class="serif">anfragen</em></h3>
+      <p>Am schnellsten geht’s per Anruf: <a class="unterstrich" href="tel:+4994219619109">09421 / 9619109</a>.<br>
+      Oder Sie schreiben uns – das Formular öffnet eine fertige E-Mail in Ihrem Mailprogramm. Es werden keine Daten über diese Website verschickt oder gespeichert.</p>
+    </div>
+    <form class="formular" data-formular data-mail="[info@beispiel.de]" novalidate>
+      <div class="feld"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="feld"><label for="f-tel">Telefon <span>(für Rückruf)</span></label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel"></div>
+      <div class="feld"><label for="f-leistung">Leistung</label>
+        <select id="f-leistung" name="leistung">
+          <option>Damen</option><option>Herren</option><option>Bart &amp; Styling</option><option>Farbe</option><option>Beratung</option>
+        </select>
+      </div>
+      <div class="feld"><label for="f-termin">Wunschtermin</label><input id="f-termin" name="wunschtermin" placeholder="z. B. Do. Nachmittag"></div>
+      <div class="feld feld--breit"><label for="f-nachricht">Nachricht</label><textarea id="f-nachricht" name="nachricht" rows="3"></textarea></div>
+      <p class="formular__status" role="status" aria-live="polite"></p>
+      <button class="knopf magnet" type="submit"><span class="knopf__punkt" aria-hidden="true"></span>E-Mail vorbereiten</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- 8 · FOOTER --------------------------------------------------------- -->
+<footer class="fuss">
+  <p class="fuss__logo" aria-hidden="true">Hussein’s <em class="serif">Salon</em></p>
+  <div class="fuss__zeile">
+    <p>© <span data-jahr>2026</span> Hussein’s Salon · Straubing</p>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://www.instagram.com/husseins_salon/" target="_blank" rel="noopener">Instagram ↗</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Vollbild-Ansicht der Galerie -->
+<dialog class="lichtbox" aria-label="Bildansicht">
+  <div class="lichtbox__buehne"><img alt="" decoding="async"></div>
+  <p class="lichtbox__zaehler" aria-live="polite"></p>
+  <button class="lichtbox__zu" type="button" aria-label="Schließen">Schließen ✕</button>
+  <button class="lichtbox__pfeil lichtbox__pfeil--zurueck" type="button" aria-label="Vorheriges Bild">←</button>
+  <button class="lichtbox__pfeil lichtbox__pfeil--vor" type="button" aria-label="Nächstes Bild">→</button>
+</dialog>
+
+<div class="cursor" aria-hidden="true"><span class="cursor__text"></span></div>
+</body>
+</html>
