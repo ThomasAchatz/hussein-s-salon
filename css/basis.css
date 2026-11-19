@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Hussein’s Salon – Basis: Schriften, Farben, Korn, Vignette
+   ========================================================================== */
+@font-face {
+  font-family: "Jost";
+  src: url("../schriften/jost-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bodoni Moda";
+  src: url("../schriften/bodoni-moda-italic-var.woff2") format("woff2");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --schwarz: #0a0a0a;
+  --tief: #111;
+  --grau-9: #1a1a1a;
+  --grau-7: #3a3a3a;
+  --grau-5: #8a8a8a;
+  --grau-3: #bdbdbd;
+  --weiss: #f4f2ee;
+  --messing: #b08d57;
+  --messing-hell: #c9a46c;
+
+  --grotesk: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
+  --serif: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+
+  --rand: clamp(16px, 4vw, 56px);
+  --sicher-oben: env(safe-area-inset-top, 0px);
+  --sicher-unten: env(safe-area-inset-bottom, 0px);
+  --sicher-links: env(safe-area-inset-left, 0px);
+  --sicher-rechts: env(safe-area-inset-right, 0px);
+
+  --ease: cubic-bezier(.77, 0, .175, 1);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--schwarz);
+  color: var(--weiss);
+  font-family: var(--grotesk);
+  font-weight: 300;
+  line-height: 1.5;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--messing-hell); outline-offset: 4px; }
+
+.serif { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -.02em; text-transform: none; }
+.messing { color: var(--messing-hell); }
+.nur-vorleser {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+/* Filmkorn über allem */
+.korn {
+  position: fixed; inset: -50%; z-index: 9000; pointer-events: none;
+  opacity: .11; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: korn 1s steps(6) infinite;
+}
+@keyframes korn {
+  0% { transform: translate(0, 0); } 20% { transform: translate(-6%, 4%); }
+  40% { transform: translate(5%, -7%); } 60% { transform: translate(-3%, 9%); }
+  80% { transform: translate(8%, 2%); } 100% { transform: translate(0, 0); }
+}
+
+/* Schwarz-weiß-Look für Fotos */
+.sw { filter: grayscale(1) contrast(1.35) brightness(.92); }
+
+/* Logo */
+.logo { display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; line-height: 1; text-transform: uppercase; }
+.logo__claim { font-size: 7px; letter-spacing: .32em; font-weight: 400; margin-bottom: 5px; }
+.logo__name { font-size: 19px; letter-spacing: .14em; font-weight: 300; white-space: nowrap; }
+.logo__ort { font-size: 6.5px; letter-spacing: .6em; margin-top: 6px; font-weight: 400; padding-left: .6em; }
+
+/* Knopf */
+.knopf {
+  --h: 56px;
+  display: inline-flex; align-items: center; gap: 14px; height: var(--h);
+  padding: 0 28px; border: 1px solid var(--messing); border-radius: 999px;
+  color: var(--weiss); text-decoration: none; text-transform: uppercase;
+  font-size: 13px; letter-spacing: .24em; font-weight: 400;
+  background: rgba(10,10,10,.35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: background .4s var(--ease), color .4s var(--ease);
+}
+.knopf:hover { background: var(--messing); color: var(--schwarz); }
+.knopf__punkt { width: 7px; height: 7px; border-radius: 50%; background: var(--messing); transition: background .4s; }
+.knopf:hover .knopf__punkt { background: var(--schwarz); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entwurf A – Das Plakat | Hussein’s Salon</title>
+<meta name="robots" content="noindex">
+<link rel="preload" href="../schriften/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../schriften/bodoni-moda-italic-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/basis.css">
+<style>
+  .hero { position: relative; height: 100svh; min-height: 600px; overflow: hidden; isolation: isolate; }
+  .hero__bild, .hero__bild img { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .hero__bild img { object-fit: cover; object-position: 50% 22%; transform: scale(1.08); }
+  /* Jalousie: Schattenstreifen + Lichtkante */
+  .hero__jalousie {
+    position: absolute; inset: -20%; z-index: 1; pointer-events: none;
+    background: repeating-linear-gradient(172deg, rgba(0,0,0,0) 0 34px, rgba(0,0,0,.72) 34px 62px);
+    animation: wandern 18s linear infinite;
+  }
+  .hero__licht {
+    position: absolute; inset: -20%; z-index: 1; pointer-events: none; mix-blend-mode: overlay;
+    background: repeating-linear-gradient(172deg, rgba(255,255,255,.35) 0 4px, rgba(255,255,255,0) 4px 62px);
+    animation: wandern 18s linear infinite;
+  }
+  @keyframes wandern { to { transform: translateY(62px); } }
+  .hero::after { /* Vignette + Boden für Text */
+    content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background:
+      radial-gradient(120% 90% at 50% 40%, transparent 40%, rgba(0,0,0,.85) 100%),
+      linear-gradient(to top, rgba(10,10,10,.95) 0%, rgba(10,10,10,.4) 38%, transparent 60%);
+  }
+  .kopf {
+    position: absolute; z-index: 5; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: calc(20px + var(--sicher-oben)) calc(var(--rand) + var(--sicher-rechts)) 0 calc(var(--rand) + var(--sicher-links));
+  }
+  .kopf nav { display: none; gap: 34px; font-size: 12px; letter-spacing: .26em; text-transform: uppercase; }
+  .kopf nav a { text-decoration: none; opacity: .85; }
+  .menue { font-size: 12px; letter-spacing: .26em; text-transform: uppercase; background: none; border: 0; color: inherit; font-family: inherit; display: flex; gap: 10px; align-items: center; padding: 10px 0; }
+  .menue i { display: block; width: 26px; height: 1px; background: currentColor; box-shadow: 0 6px 0 currentColor; }
+  .hero__inhalt {
+    position: absolute; z-index: 5; left: 0; right: 0; bottom: 0;
+    padding: 0 calc(var(--rand) + var(--sicher-rechts)) calc(28px + var(--sicher-unten)) calc(var(--rand) + var(--sicher-links));
+  }
+  .hero__vorzeile { display: flex; gap: 14px; align-items: center; font-size: 11px; letter-spacing: .34em; text-transform: uppercase; color: var(--weiss); margin-bottom: 14px; text-shadow: 0 1px 12px #000, 0 0 2px #000; }
+  .hero__vorzeile::before { content: ""; width: 38px; height: 1px; background: var(--messing); }
+  h1 { margin: 0; line-height: .82; text-transform: uppercase; font-weight: 200; }
+  h1 .z1 { display: block; font-size: clamp(54px, 15.4vw, 260px); letter-spacing: -.02em; margin-left: -.04em; }
+  h1 .z2 { display: block; font-size: clamp(50px, 13.2vw, 228px); margin-top: .02em; padding-left: 8vw; }
+  @media (min-width: 700px) { h1 .z2 { font-size: clamp(50px, 10.2vw, 190px); white-space: nowrap; margin-top: .06em; padding-left: 12vw; } }
+  h1 .z2 .serif { font-size: 1.08em; }
+  .hero__fuss { display: flex; flex-wrap: wrap; gap: 22px 40px; align-items: center; justify-content: space-between; margin-top: 28px; }
+  .abspann { font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: var(--grau-3); line-height: 1.9; }
+  .abspann b { font-weight: 400; color: var(--weiss); }
+  @media (min-width: 900px) {
+    .kopf nav { display: flex; } .menue { display: none; }
+    .hero__bild img { object-position: 50% 26%; }
+  }
+</style>
+</head>
+<body>
+<div class="korn" aria-hidden="true"></div>
+<header class="kopf">
+  <a class="logo" href="#" aria-label="Hussein’s Salon – Startseite">
+    <span class="logo__claim">Your hair, our masterpiece</span>
+    <span class="logo__name">Hussein’s Salon</span>
+    <span class="logo__ort">Straubing</span>
+  </a>
+  <nav aria-label="Hauptnavigation"><a href="#">Manifest</a><a href="#">Leistungen</a><a href="#">Galerie</a><a href="#">Team</a><a href="#">Besuch</a></nav>
+  <button class="menue" type="button">Menü <i aria-hidden="true"></i></button>
+</header>
+<section class="hero">
+  <picture class="hero__bild">
+    <source type="image/avif" srcset="../bilder/inhaber-duo-278.avif">
+    <img class="sw" src="../bilder/inhaber-duo-278.webp" width="278" height="332" alt="Die Inhaber von Hussein’s Salon im Salon, rechts Hussein">
+  </picture>
+  <div class="hero__jalousie" aria-hidden="true"></div>
+  <div class="hero__licht" aria-hidden="true"></div>
+  <div class="hero__inhalt">
+    <p class="hero__vorzeile">Damen &amp; Herren · Straubing</p>
+    <h1><span class="z1">Your hair,</span><span class="z2">our <span class="serif">Masterpiece</span></span></h1>
+    <div class="hero__fuss">
+      <a class="knopf" href="tel:+4994219619109"><span class="knopf__punkt" aria-hidden="true"></span>Termin buchen</a>
+      <p class="abspann">In den Hauptrollen: <b>[Name]</b> &amp; <b>Hussein</b><br>Fraunhoferstraße 17 · 09421 / 9619109</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

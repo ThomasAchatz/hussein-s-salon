@@ -1,0 +1,142 @@
+{
+ "bart-fade": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 332
+ },
+ "bart-spiegel": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "damen-bob-blond": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 330
+ },
+ "damen-bob-straehnen": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 332
+ },
+ "damen-lang-glatt": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 331
+ },
+ "damen-schwarz-wellen": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 331
+ },
+ "farbe-balayage-locken": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "farbe-blond-wellen": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 331
+ },
+ "herren-buzzcut-blond": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 330
+ },
+ "herren-crop-fade": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 331
+ },
+ "herren-curtain-fade": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "herren-fade-hinterkopf": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 332
+ },
+ "herren-fade-nacken": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "herren-fade-profil": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 330
+ },
+ "herren-locken-blond-fade": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 330
+ },
+ "herren-locken-taper": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 330
+ },
+ "herren-textur-fade": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 331
+ },
+ "inhaber-duo": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "salon-backstage": {
+  "breiten": [
+   278
+  ],
+  "b": 278,
+  "h": 332
+ },
+ "team-empfang": {
+  "breiten": [
+   277
+  ],
+  "b": 277,
+  "h": 332
+ }
+}
