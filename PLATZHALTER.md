@@ -13,8 +13,7 @@ Alle Platzhalter stehen im Code in eckigen Klammern `[…]` – mit `grep -rn "\
 
 ## Fotos (`bilder/original/`, danach `python3 tools/bilder.py`)
 Die jetzigen Bilder sind Ausschnitte aus Instagram-Screenshots (≈ 280 px breit) und nur Platzhalter.
-- [ ] **Doppelporträt der Inhaber** im dreiteiligen Anzug, mit Schere/Föhn, hart beleuchtet (Hochformat 4:5, ≥ 2000 px) → Dateiname `inhaber-duo.jpg`
-- [ ] **Einzelporträts** beider Inhaber (4:5) → dann im Team die zwei `platzhalter`-Flächen durch `<picture data-bild="…">` ersetzen
+- [ ] **Doppelporträt der Inhaber** (Anzug, Schere/Föhn) ist eingebaut, stammt aber aus einem Handy-Screenshot (1027 px breit). Bitte die **Originaldatei** schicken → als `bilder/original/inhaber-hero.jpg` ablegen (alte `.png` löschen); die Team-Porträts `team-inhaber-links` / `team-hussein` sind Ausschnitte daraus und können ebenso ersetzt werden
 - [ ] **10–15 Arbeiten** in hoher Auflösung (gleiche Dateinamen wie jetzt überschreiben = keine HTML-Änderung nötig)
 - [ ] Einverständnis der abgebildeten Kundinnen und Kunden zur Veröffentlichung (DSGVO/KUG)
 - [ ] Logo als Vektor (SVG/PDF), falls das nachgesetzte Jost-Logo ersetzt werden soll

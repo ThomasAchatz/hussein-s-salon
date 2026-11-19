@@ -125,6 +125,15 @@
   "b": 278,
   "h": 332
  },
+ "inhaber-hero": {
+  "breiten": [
+   480,
+   800,
+   1027
+  ],
+  "b": 1027,
+  "h": 577
+ },
  "salon-backstage": {
   "breiten": [
    278
@@ -138,5 +147,19 @@
   ],
   "b": 277,
   "h": 332
+ },
+ "team-hussein": {
+  "breiten": [
+   460
+  ],
+  "b": 460,
+  "h": 575
+ },
+ "team-inhaber-links": {
+  "breiten": [
+   460
+  ],
+  "b": 460,
+  "h": 575
  }
 }

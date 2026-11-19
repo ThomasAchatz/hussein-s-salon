@@ -141,19 +141,18 @@ function hero(verzoegerung) {
   const h = $(".hero");
   if (!h) return;
   $$("[data-teilen]", h).forEach((el) => teilen(el, "zeichen"));
-  const box = $("[data-lamellen-hero]", h);
-  const deckel = lamellenDeckel(box, 9);
+  const foto = $("[data-hero-foto]", h);
   const tl = gsap.timeline({ delay: verzoegerung + 0.1, defaults: { ease: "power4.out" } });
   tl.set($("h1", h), { opacity: 1 })
-    .to($$("i", deckel), { scaleY: 0, duration: 0.9, stagger: 0.06, ease: "power3.inOut" }, 0)
-    .from($(".lamellen__bild", h), { scale: 1.25, duration: 1.8, ease: "power3.out" }, 0)
+    .fromTo(foto, { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1.1, ease: "power4.inOut" }, 0)
+    .from($(".hero__foto-innen", h), { scale: 1.15, duration: 1.8, ease: "power3.out" }, 0)
     .from($$(".titel__a .teil", h), { yPercent: 115, rotate: 8, duration: 1.2, stagger: 0.04 }, 0.15)
     .from($$(".titel__b .teil", h), { yPercent: 115, duration: 1, stagger: 0.025 }, 0.45)
     .fromTo($(".titel__vor", h), { autoAlpha: 0, x: -20 }, { autoAlpha: 1, x: 0, duration: 0.8 }, 0.4)
     .fromTo($(".hero__unten", h), { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.9 }, 0.8);
 
   /* Parallax */
-  gsap.to($(".lamellen__bild", h), { yPercent: 9, ease: "none", scrollTrigger: { trigger: h, start: "top top", end: "bottom top", scrub: true } });
+  gsap.to($(".hero__foto-innen", h), { yPercent: 6, ease: "none", scrollTrigger: { trigger: h, start: "top top", end: "bottom top", scrub: true } });
   gsap.to($(".titel", h), { y: () => -innerHeight * 0.12, ease: "none", scrollTrigger: { trigger: h, start: "top top", end: "bottom top", scrub: true } });
 }
 
